@@ -4,7 +4,6 @@ import Teacher from "./pages/Teacher";
 import Students from "./pages/Students";
 import LoginPage from "./pages/LoginPage";
 import AdminLayout from "./components/layout/AdminLayout";
-import TeacherStudents from "./pages/teacherStudents";
 
 function App() {
   return (
@@ -16,7 +15,6 @@ function App() {
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="teachers" element={<Teacher />} />
           <Route path="students" element={<Students />} />
-          <Route path="teacherStudents" element={<TeacherStudents />} />
         </Route>
       </Routes>
     </BrowserRouter>

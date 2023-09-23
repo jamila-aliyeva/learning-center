@@ -74,7 +74,7 @@ const Teachers = () => {
             <Button onClick={() => deleteData(record.id)}>Delete</Button>
           </Popconfirm>
           <Button>
-            <Link to={`/teacherStudents/${record.id}`}>See students</Link>
+            <Link to={`/dashboard/${record.id}`}>See students</Link>
           </Button>
         </Space>
       ),

@@ -155,11 +155,13 @@ const Teachers = () => {
     }
   }
 
+useEffect(() => {
   const filteredData = data.filter((item) => {
     const fullName = `${item.fullName}`.toLowerCase();
     return fullName.includes(searchQuery.trim().toLowerCase());
   });
-  console.log(filteredData);
+  setData(filteredData)
+}, [searchQuery])
 
   const confirm = (e) => {
     console.log(e);

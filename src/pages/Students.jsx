@@ -111,11 +111,13 @@ const Teachers = () => {
     setIsModalOpen(false);
   };
 
-  const filteredData = data.filter((item) => {
-    const fullName = `${item.fullName}`.toLowerCase();
-    return fullName.includes(searchQuery.trim().toLowerCase());
-  });
-  console.log(filteredData);
+  useEffect(() => {
+    const filteredData = data.filter((item) => {
+      const fullName = `${item.fullName}`.toLowerCase();
+      return fullName.includes(searchQuery.trim().toLowerCase());
+    });
+    setData(filteredData);
+  }, [searchQuery]);
 
   const onSearch = async (value, _e, info) => {
     try {

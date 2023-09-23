@@ -77,11 +77,6 @@ const AdminLayout = () => {
               icon: <UploadOutlined />,
               label: <Link to="/students">Students</Link>,
             },
-            {
-              key: "/teacherStudents",
-              icon: <UploadOutlined />,
-              label: <Link to="/teacherStudents">TeacherStudents</Link>,
-            },
           ]}
         />
       </Sider>

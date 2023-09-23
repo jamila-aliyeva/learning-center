@@ -114,6 +114,7 @@ const Teachers = () => {
   const handleOk = async () => {
     try {
       const values = await form.validateFields();
+      console.log(values);
       if (selected == null) {
         await request.post("teachers", values);
       } else {
